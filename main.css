@@ -1,0 +1,193 @@
+:root {
+  --White : hsl(0, 0%, 100%);
+  --Off-white : hsl(0, 0%, 94%);
+  --Light-grey : hsl(0, 0%, 86%);
+  --Smokey-grey : hsl(0, 1%, 44%);
+  --Off-black : hsl(0, 0%, 8%);
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+}
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-grey);
+  min-height: 100vh; /* 100% viewing height */
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--Off-white);
+  border-radius: 1rem 1rem 10rem .1rem;
+}
+
+.card{
+  background-color: var(--Off-white);
+  width: 600px;
+  border-radius: 1rem 1rem 10rem .1rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.birthDate{
+  display: flex;
+  gap: 2rem;
+}
+
+.input{
+  display: flex;
+  flex-direction: column; /* to add style for invalid input*/
+}
+
+.input label {
+  font-weight: 600;
+}
+
+input{
+  width: 100px;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 1px solid var(--Light-grey);
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem
+}
+
+input::placeholder{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.submit-block{
+  display: flex;
+  align-items: center;
+}
+
+.submit-block hr{
+  width: 100%;
+  color: var(--Light-grey);
+}
+
+button{
+  border-radius: 50%;
+  background-color: var(--Purple);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem;
+  transition: 0.15s;
+}
+
+button:hover{
+  background-color: var(--Off-black);
+}
+
+#yy, #mm, #dd{
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: italic;
+  height: fit-content;
+}
+
+.ageOutput div{
+  font-size: 5rem;
+  font-weight: 800;
+  font-style: italic;
+  height: fit-content;
+}
+
+span{
+  color: var(--Purple);
+}
+
+alert{
+  color: red;
+  font-size: 10px;
+}
+
+@media screen and (max-width : 375px){
+  
+  .ageOutput div{
+    font-size: 2.7rem;
+    height: 50px;
+  }
+  .ageOutput{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    width: 250px;
+    border-radius: 1rem 1rem 5rem .1rem;
+    padding: 2rem 1rem;
+  }
+  .card{
+    width: 250px;
+    border-radius: 1rem 1rem 5rem .1rem;
+  }
+  #yy, #mm, #dd{
+    font-size: 3rem;
+  }
+  .birthDate{
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+  }
+  input{
+  width: 60px;
+  padding: .7rem .5rem;
+  border-radius: .5rem;
+  border: 1px solid var(--Light-grey);
+  align-items: center;
+  display: flex;
+  font-size: 1rem
+  }
+  input::placeholder{
+    font-size: 1rem;
+    padding: .7rem .5rem;
+  }
+  .submit-block{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .input label {
+    font-weight: 600;
+    font-size: .7rem;
+  }
+
+  button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    height: 60px;
+    width: 60px;
+  }
+  
+  alert{
+    color: red;
+    font-size: 7px;
+  }
+} 
+
+
+
+
+
+
